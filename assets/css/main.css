@@ -28,7 +28,7 @@ section, summary, time, mark, audio, video {
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;}
-	
+
 header.special .icon .logo-img {
   height: 90px;
   width: auto;
@@ -95,8 +95,8 @@ header.special .icon .logo-img {
 .icon.circle.fa-facebook:hover {
 					background: #829bc9;
 			}
-			
-	
+
+
 
 body {
 	line-height: 1;
@@ -3336,10 +3336,11 @@ input, select, textarea {
 			#banner {
 				background-size: 10em, 10em, auto, cover;
 				padding: 6em 0;
+
 			}
 
 				#banner .inner {
-					background: none;
+						background: rgba(52, 27, 43, 0.5);
 					display: block;
 					padding: 0 1.5em;
 				}
