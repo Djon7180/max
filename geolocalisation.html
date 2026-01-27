@@ -16,23 +16,52 @@
     <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 
     <style>
-      /* Version 1: hauteur fixe pour reproduire le comportement “fichier simple” */
-      .map-fixed {
+      /* Version 2 : HYBRIDE (portrait ≠ paysage ≠ desktop) */
+
+      .map-embed {
         width: 100%;
-        height: 700px;         /* <- hauteur fixe */
-        border: 0;
         overflow: hidden;
+        border: 0;
+        /* fallback “safe” si aucun media query ne matche */
+        height: 700px;
       }
-      .map-fixed iframe {
+
+      .map-embed iframe {
         width: 100%;
         height: 100%;
         border: 0;
         display: block;
       }
 
-      /* Optionnel: un peu plus haut sur grands écrans */
+      /* Mobile en portrait : presque plein écran */
+      @media (max-width: 736px) and (orientation: portrait) {
+        .map-embed {
+          height: 78vh;   /* fallback */
+          height: 78dvh;  /* mieux sur mobile récent */
+          min-height: 420px;
+        }
+      }
+
+      /* Mobile en paysage : plus bas (sinon ça déborde) */
+      @media (max-width: 736px) and (orientation: landscape) {
+        .map-embed {
+          height: 62vh;   /* fallback */
+          height: 62dvh;
+          min-height: 320px;
+        }
+      }
+
+      /* Desktop/tablette : hauteur fixe confortable */
+      @media (min-width: 737px) {
+        .map-embed {
+          height: 720px;
+        }
+      }
+
       @media (min-width: 980px) {
-        .map-fixed { height: 750px; }
+        .map-embed {
+          height: 760px;
+        }
       }
     </style>
   </head>
@@ -81,8 +110,7 @@
                 ou simplement venir me rencontrer sur la route.
               </p>
 
-              <!-- Carte Komoot - hauteur fixe -->
-              <div class="map-fixed">
+              <div class="map-embed">
                 <iframe
                   src="https://www.komoot.com/fr-fr/tour/2764370052/embed?share_token=aLiCPVk7RRUFvsUYFk8kwdU7Rwm4bPhxg68QcN8OzVcEnm5Z8p&profile=1"
                   frameborder="0"
@@ -102,11 +130,9 @@
               <p>
                 Ici, tu trouveras le parcours de cette année (les étapes et mises à jour s’y ajoutent au fil du temps).
               </p>
-
-              <!-- Carte Komoot - hauteur fixe -->
-              <div class="map-fixed">
+              <div class="map-embed">
                 <iframe
-                  src="https://www.komoot.com/fr-fr/tour/2764370052/embed?share_token=aLiCPVk7RRUFvsUYFk8kwdU7Rwm4bPhxg68QcN8OzVcEnm5Z8p&profile=1"
+                  src="https://www.komoot.com/fr-fr/tour/2764714353/embed?share_token=aJuvXZmMNIhjPIzVU17YRSbY0bryhHIlng5Nzf5TN7mNdEP4qv&profile=1"
                   frameborder="0"
                   loading="lazy"
                   title="Parcours de l’année (Komoot)">
