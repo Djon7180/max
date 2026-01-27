@@ -14,42 +14,19 @@
     <meta name="description" content="Max le Bourlingueur : cyclo-nomade, mécanicien vélo, conférencier et artiste. Présentation de son voyage, de ses services itinérants et de son mode de vie avec ses chiens.">
     <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 <style>
-  .map-container{
-    width: 100%;
-    position: relative;
-  }
+.map-container { outline: 3px solid red; }
+.map-container { width: 100%; position: relative; }
+.map-container iframe { width: 100%; height: 100%; border: 0; display: block; }
 
-  /* Desktop / paysage : ratio ok si tu veux */
-  @media (min-width: 737px){
-    .map-container{
-      height: 0;
-      padding-bottom: 60%;
-    }
-    .map-container iframe{
-      position: absolute;
-      inset: 0;
-      width: 100%;
-      height: 100%;
-      border: 0;
-      display: block;
-    }
-  }
+@media (min-width: 737px){
+  .map-container { height: 0; padding-bottom: 60%; }
+  .map-container iframe { position: absolute; inset: 0; }
+}
 
-  /* Mobile portrait : hauteur réelle */
-  @media (max-width: 736px){
-    .map-container{
-      height: 70vh;      /* visible en portrait */
-      min-height: 380px; /* sécurité */
-      padding-bottom: 0; /* important */
-    }
-    .map-container iframe{
-      position: relative; /* important */
-      width: 100%;
-      height: 100%;
-      border: 0;
-      display: block;
-    }
-  }
+@media (max-width: 736px){
+  .map-container { height: 70vh; min-height: 380px; padding-bottom: 0; }
+  .map-container iframe { position: relative; }
+}
 </style>
 	
   </head>
@@ -101,9 +78,13 @@
 					Ici, tu peux consulter mon itinéraire du jour afin de planifier une intervention vélo
 					ou simplement venir me rencontrer sur la route.
 				  </p>
-				  <div class="map-container">
-					<iframe src="https://www.komoot.com/fr-fr/tour/2764370052/embed?share_token=aLiCPVk7RRUFvsUYFk8kwdU7Rwm4bPhxg68QcN8OzVcEnm5Z8p" width="100%" height="800" frameborder="0" scrolling="no"></iframe>
-				  </div>
+				<iframe
+				  src="https://www.komoot.com/fr-fr/tour/2764370052/embed?share_token=aLiCPVk7RRUFvsUYFk8kwdU7Rwm4bPhxg68QcN8OzVcEnm5Z8p"
+				  width="100%"
+				  frameborder="0"
+				  scrolling="no"
+				  loading="lazy">
+				</iframe>
 				  <p style="margin-top: 10px; font-size: 0.95em;">
 					Si l’itinéraire ne s’affiche pas, <a href="https://www.komoot.com/fr-fr/tour/2764370052" target="_blank" rel="noopener noreferrer">ouvre-le sur Komoot</a>.
 				  </p>
