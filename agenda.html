@@ -1,0 +1,183 @@
+<!DOCTYPE HTML>
+<!--
+  Twenty by HTML5 UP
+  html5up.net | @ajlkn
+  Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html lang="fr">
+  <head>
+    <title>Max le Bourlingueur</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <meta name="description" content="Max le Bourlingueur : cyclo-nomade, mécanicien vélo, conférencier et artiste. Présentation de son voyage, de ses services itinérants et de son mode de vie avec ses chiens.">
+
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+
+    <style>
+      /* Version 2 : HYBRIDE (portrait ≠ paysage ≠ desktop) */
+
+      .map-embed {
+        width: 100%;
+        overflow: hidden;
+        border: 0;
+        /* fallback “safe” si aucun media query ne matche */
+        height: 700px;
+      }
+
+      .map-embed iframe {
+        width: 100%;
+        height: 100%;
+        border: 0;
+        display: block;
+      }
+
+      /* Mobile en portrait : presque plein écran */
+      @media (max-width: 736px) and (orientation: portrait) {
+        .map-embed {
+          height: 78vh;   /* fallback */
+          height: 78dvh;  /* mieux sur mobile récent */
+          min-height: 420px;
+        }
+      }
+
+      /* Mobile en paysage : plus bas (sinon ça déborde) */
+      @media (max-width: 736px) and (orientation: landscape) {
+        .map-embed {
+          height: 62vh;   /* fallback */
+          height: 62dvh;
+          min-height: 320px;
+        }
+      }
+
+      /* Desktop/tablette : hauteur fixe confortable */
+      @media (min-width: 737px) {
+        .map-embed {
+          height: 720px;
+        }
+      }
+
+      @media (min-width: 980px) {
+        .map-embed {
+          height: 760px;
+        }
+      }
+    </style>
+  </head>
+
+  <body class="index is-preload">
+    <div id="page-wrapper">
+
+      <!-- Header -->
+      <header id="header" class="reveal">
+        <h1 id="logo"><a href="index.html">Max <span>le bourlingueur</span></a></h1>
+        <nav id="nav">
+          <ul>
+            <li><a href="index.html">Bienvenue</a></li>
+            <li class="submenu">
+              <a href="#propositions">Mes services</a>
+              <ul>
+                <li><a href="atelier.html">Atelier Vélo</a></li>
+                <li><a href="conferences.html">Conférences</a></li>
+                <li class="current"><a href="spectacles.html">Spectacles</a></li>
+              </ul>
+            </li>
+            <li class="current"><a href="geolocalisation.html">Ma route</a></li>
+            <li><a href="partenariats.html">Partenariats</a></li>
+            <li><a href="presse.html">Presse</a></li>
+          </ul>
+        </nav>
+      </header>
+
+      <!-- Main -->
+      <article id="main">
+        <section class="wrapper style1 container special" id="propositions">
+
+          <header class="major">
+            <span class="icon">
+              <img src="images/ico.png" alt="Logo" class="logo-img" />
+            </span>
+            <h2><strong>Me trouver - Planifier une rencontre</strong></h2>
+          </header>
+
+          <div class="row">
+            <div class="col-12">
+
+              <h3>Itinéraire du jour</h3>
+              <p>
+                Ici, tu peux consulter mon itinéraire du jour afin de planifier une intervention vélo
+                ou simplement venir me rencontrer sur la route.
+              </p>
+
+              <div class="map-embed">
+				<iframe src="https://calendar.google.com/calendar/embed?height=600&wkst=2&ctz=Europe%2FBrussels&showPrint=0&title=Max%20Le%20Bourlingueur&src=ZGF2aWQuam9ubmllYXV4QGdtYWlsLmNvbQ&src=YTc1ODE0YmVkMjdlYTQ2ZDJhMDI2ZGU0YTZmMjNmZjFkMjY0OThhMzExYjhiMDA4OTIzNjVlYzAwYjBlM2IyMUBncm91cC5jYWxlbmRhci5nb29nbGUuY29t&color=%237986cb&color=%23ef6c00" style="border:solid 1px #777" width="800" height="600" frameborder="0" scrolling="no"></iframe>
+              </div>
+
+              <p style="margin-top: 10px; font-size: 0.95em;">
+                Si l’itinéraire ne s’affiche pas,
+                <a href="https://www.komoot.com/fr-fr/tour/2764370052" target="_blank" rel="noopener noreferrer">ouvre-le sur Komoot</a>.
+              </p>
+
+              <hr style="margin: 32px 0;" />
+
+              <h3>Parcours de l’année</h3>
+              <p>
+                Ici, tu trouveras le parcours jusqu'à fin juillet 2026.
+              </p>
+              <div class="map-embed">
+                <iframe
+                  src="https://www.komoot.com/fr-fr/tour/2765098861/embed?share_token=aVLmNWULu3wzpbv9dCk4QAcgqepgNqijfb2fTFkOWgyFQD4PdB&profile=1"
+                  frameborder="0"
+                  loading="lazy"
+                  title="Parcours de l’année (Komoot)">
+                </iframe>
+              </div>
+
+              <p style="margin-top: 10px; font-size: 0.95em;">
+                Si l’itinéraire ne s’affiche pas,
+                <a href="https://www.komoot.com/fr-fr/tour/2764370052" target="_blank" rel="noopener noreferrer">ouvre-le sur Komoot</a>.
+              </p>
+
+            </div>
+          </div>
+
+          <footer>
+            <ul class="buttons">
+              <li><a href="index.html" class="button">Retour à l'accueil</a></li>
+            </ul>
+          </footer>
+
+        </section>
+      </article>
+
+      <!-- Footer -->
+      <footer id="footer">
+        <ul class="icons">
+          <li><a href="https://www.facebook.com/max.le.bourlingueur.cyclo.nomade/?locale=fr_FR" class="icon brands circle fa-facebook-f"><span class="label">Facebook</span></a></li>
+          <li><a href="https://www.instagram.com/max_le_bourlingueur/" class="icon brands circle fa-instagram"><span class="label">Instagram</span></a></li>
+          <li><a href="https://www.tiktok.com/@maxlebourlingueur" class="icon brands circle fa-tiktok"><span class="label">Tiktok</span></a></li>
+          <li><a href="https://www.youtube.com/channel/UCQoujIVJLFlmuWatibu2wpQ/featured" class="icon brands circle fa-youtube"><span class="label">Youtube</span></a></li>
+        </ul>
+
+        <ul class="copyright">
+          <li>&copy; Max le bourlingeur</li>
+          <li>Design: <a href="http://html5up.net">HTML5 UP</a> modification <a href="https://djon.enote.be/cv/">Djon</a></li>
+        </ul>
+      </footer>
+
+    </div>
+
+    <!-- Scripts -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/jquery.dropotron.min.js"></script>
+    <script src="assets/js/jquery.scrolly.min.js"></script>
+    <script src="assets/js/jquery.scrollgress.min.js"></script>
+    <script src="assets/js/jquery.scrollex.min.js"></script>
+    <script src="assets/js/browser.min.js"></script>
+    <script src="assets/js/breakpoints.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>
+
