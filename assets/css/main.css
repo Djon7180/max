@@ -2266,20 +2266,10 @@ input, select, textarea {
 		button.small,
 		.button.small {
 			font-size: 0.7em;
-			min-width: 14em;
+			min-width: 20em;
 			padding: 0.5em 0;
 		}
 
-
-		input[type="button"].big,
-		input[type="submit"].big,
-		input[type="reset"].big,
-		button.big,
-		.button.big {
-			font-size: 0.7em;
-			min-width: 30em;
-			padding: 0.5em 0;
-		}
 
 
 /* Wrapper */
