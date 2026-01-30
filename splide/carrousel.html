@@ -1,0 +1,49 @@
+<html>
+<head>
+  <script src="dist/js/splide.min.js"></script>
+  <link rel="stylesheet" href="dist/css/themes/splide-default.min.css">
+<style>
+  .splide__slide img {
+  width: 100%;
+  height: auto;
+}
+</style>
+</head>
+
+<body>
+
+  <section id="image-carousel" class="splide" aria-label="Beautiful Images">
+    <div class="splide__track">
+  		<ul class="splide__list">
+  			<li class="splide__slide">
+  				<img src="../images/atelier1.jpg" alt="">
+  			</li>
+  			<li class="splide__slide">
+  				<img src="../images/spectacle1.jpg" alt="">
+  			</li>
+  			<li class="splide__slide">
+  				<img src="../images/interieur1.jpg" alt="">
+  			</li>
+  		</ul>
+    </div>
+  </section>
+
+
+
+  <script>
+  new Splide('.splide', {
+    type      : 'loop',     // boucle infinie
+    autoplay  : true,       // lecture automatique
+    interval  : 4000,       // délai entre slides (en ms)
+    speed     : 600,        // vitesse de transition
+    pauseOnHover: true,     // pause si la souris est dessus
+    pauseOnFocus: false,
+    arrows    : true,       // afficher les flèches
+    pagination: true,       // afficher les puces
+    perPage   : 1,          // nombre de slides affichés
+    rewind    : true,      // retour au début automatiquement
+    drag      : true,       // glisser pour changer de slide
+  }).mount();
+  </script>
+</body>
+</html>
