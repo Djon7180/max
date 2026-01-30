@@ -14,6 +14,35 @@
 	<meta name="description" content="Max le Bourlingueur : cyclo-nomade, mécanicien vélo,  conférencier et artiste. Présentation de son voyage,  de ses services itinérants et de son mode de vie avec ses chiens.
 ">
 	<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	<script src="splide/dist/js/splide.min.js"></script>
+	<link rel="stylesheet" href="splide/dist/css/themes/splide-default.min.css">
+<style>
+/* Images */
+#image-carousel .splide__slide img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+/* Fix conflits thème Twenty sur les boutons/liens de Splide */
+#image-carousel a,
+#image-carousel button {
+  border-bottom: 0 !important;
+  min-width: 0 !important;
+  box-shadow: none !important;
+  letter-spacing: normal !important;
+  text-transform: none !important;
+}
+
+/* (Optionnel) rendu des flèches/pagination plus lisible */
+#image-carousel .splide__arrow {
+  border: 0 !important;
+}
+#image-carousel .splide__pagination__page {
+  border: 0 !important;
+}
+
+</style>
 </head>
 <body class="index is-preload">
 	<div id="page-wrapper">
@@ -30,7 +59,7 @@
 							<li class=""><a href="partenariats.html">Partenariats</a></li>
 							<li class=""><a href="presse.html">Presse</a></li>
 							<li class=""><a href="remerciements.html">Remerciements</a></li>
-						</ul>	
+						</ul>
 					</nav>
 				</header>
 
@@ -47,7 +76,20 @@
 
 					<!-- One -->
 					<section class="wrapper style4 container">
-										<a href="#" class="image featured"><img src="images/services.jpg" alt="" /></a>
+
+						<section id="image-carousel" class="splide" aria-label="Beautiful Images">
+					    <div class="splide__track">
+					      <ul class="splide__list">
+					        <li class="splide__slide"><img src="images/atelier1.jpg" alt="Atelier"></li>
+					        <li class="splide__slide"><img src="images/interieur1.jpg" alt="Intérieur"></li>
+					        <li class="splide__slide"><img src="images/spectacle1.jpg" alt="Spectacle"></li>
+					      </ul>
+					    </div>
+					  </section>
+
+
+
+
 										<header>
 											<h3>Je vous propose : </h3>
 										</header>
@@ -111,6 +153,22 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+
+			  <script>
+			  new Splide('#image-carousel', {
+			    type      : 'loop',     // boucle infinie
+			    autoplay  : true,       // lecture automatique
+			    interval  : 4000,       // délai entre slides (en ms)
+			    speed     : 600,        // vitesse de transition
+			    pauseOnHover: true,     // pause si la souris est dessus
+			    pauseOnFocus: false,
+			    arrows    : true,       // afficher les flèches
+			    pagination: true,       // afficher les puces
+			    perPage   : 1,          // nombre de slides affichés
+			    rewind    : true,      // retour au début automatiquement
+			    drag      : true,       // glisser pour changer de slide
+			  }).mount();
+			  </script>
 
 	</body>
 </html>
