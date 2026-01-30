@@ -1,132 +1,174 @@
 <!DOCTYPE HTML>
+<!--
+	Twenty by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
 <html>
-  <head>
-    <title>Max le Bourlingueur</title>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-    <link rel="stylesheet" href="assets/css/main.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <meta name="description" content="Max le Bourlingueur : cyclo-nomade, mécanicien vélo, conférencier et artiste. Présentation de son voyage, de ses services itinérants et de son mode de vie avec ses chiens.">
-    <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-  </head>
+<head>
+	<title>Max le Bourlingueur</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<link rel="stylesheet" href="assets/css/main.css" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+	<meta name="description" content="Max le Bourlingueur : cyclo-nomade, mécanicien vélo,  conférencier et artiste. Présentation de son voyage,  de ses services itinérants et de son mode de vie avec ses chiens.
+">
+	<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	<script src="splide/dist/js/splide.min.js"></script>
+	<link rel="stylesheet" href="splide/dist/css/themes/splide-default.min.css">
+<style>
+/* Images */
+#image-carousel .splide__slide img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
 
-  <body class="index is-preload">
-    <div id="page-wrapper">
+/* Fix conflits thème Twenty sur les boutons/liens de Splide */
+#image-carousel a,
+#image-carousel button {
+  border-bottom: 0 !important;
+  min-width: 0 !important;
+  box-shadow: none !important;
+  letter-spacing: normal !important;
+  text-transform: none !important;
+}
 
-      <!-- Header -->
-      <header id="header" class="reveal">
-          <h1 id="logo"><a href="index.html">Max <span>le bourlingueur</span></a></h1>
-          <nav id="nav">
-            <ul>
-              <li class=""><a href="index.html">Bienvenue</a></li>
-              <li class=""><a href="prestations.html">Prestations</a></li>
-              <li class=""><a href="galerie.html">Photos</a></li>
-              <li class=""><a href="agenda.html">Agenda</a></li>
-              <li class="current"><a href="partenariats.html">Partenariats</a></li>
-              <li class=""><a href="presse.html">Presse</a></li>
-              <li class=""><a href="remerciements.html">Remerciements</a></li>
-            </ul>
-          </nav>
-        </header>
-      <!-- Main -->
-      <article id="main">
-        <header class="special container">
-          <span class="icon">
-            <img src="images/ico.png" alt="Logo" class="logo-img" />
-          </span>
-          <h2><strong>Des partenaires de qualité</strong></h2>
-		  <p>
-							  Sur la route, je noue des partenariats avec des <strong>acteurs locaux de qualité</strong>, engagés dans le
-							  lien social et la transition écologique. Défendre le <strong>local</strong> est essentiel pour moi : c’est une
-							  démarche à la fois <strong>humaniste</strong> et <strong>écologique</strong>, qui permet de soutenir les territoires,
-							  de renforcer les rencontres et de construire des projets utiles, simples et profondément humains.
-							</p>
-        </header>
+/* (Optionnel) rendu des flèches/pagination plus lisible */
+#image-carousel .splide__arrow {
+  border: 0 !important;
+}
+#image-carousel .splide__pagination__page {
+  border: 0 !important;
+}
 
-        <section class="wrapper style4 container">
-        <section class="wrapper style1 container special">
+</style>
+</head>
+<body class="index is-preload">
+	<div id="page-wrapper">
 
-									<div class="row">
-								<div class="col-6 col-12-narrower">
+			<!-- Header -->
+			<header id="header" class="reveal">
+					<h1 id="logo"><a href="index.html">Max <span>le bourlingueur</span></a></h1>
+					<nav id="nav">
+						<ul>
+							<li class=""><a href="index.html">Bienvenue</a></li>
+							<li class="current"><a href="prestations.html">Prestations</a></li>
+							<li class=""><a href="galerie.html">Photos</a></li>
+							<li class=""><a href="agenda.html">Agenda</a></li>
+							<li class=""><a href="partenariats.html">Partenariats</a></li>
+							<li class=""><a href="presse.html">Presse</a></li>
+							<li class=""><a href="remerciements.html">Remerciements</a></li>
+						</ul>
+					</nav>
+				</header>
 
-									<section>
-										<span class="icon">
-    <a href="https://www.guidemarchand.fr/"><img src="images/guide_marchand.png" alt="Guide Marchand" style="max-width:200px; border-radius:6px;"></a>
-</span>
+			<!-- Main -->
+				<article id="main">
+
+					<header class="special container">
+						<span class="icon">
+							<img src="images/ico.png" alt="Logo" class="logo-img" />
+						</span>
+						<h2><strong>Mes prestations</strong></h2>
+						<p>Voici le programme que je propose d'animer au sein de l'un de vos espaces publics (parc, aire de loisirs ou place du village)</p>
+					</header>
+
+					<!-- One -->
+					<section class="wrapper style4 container">
+
+						<section id="image-carousel" class="splide" aria-label="Beautiful Images">
+					    <div class="splide__track">
+					      <ul class="splide__list">
+					        <li class="splide__slide"><img src="images/atelier1.jpg" alt="Atelier"></li>
+					        <li class="splide__slide"><img src="images/interieur1.jpg" alt="Intérieur"></li>
+					        <li class="splide__slide"><img src="images/spectacle1.jpg" alt="Spectacle"></li>
+					      </ul>
+					    </div>
+					  </section>
+
+
+
+
 										<header>
+											<h3>Je vous propose : </h3>
 										</header>
+										<ul>
+									  <li>
+									    <strong>Atelier d’initiation à la mécanique vélo</strong>
+									    (samedi &amp; dimanche : 10&nbsp;h&nbsp;00–12&nbsp;h&nbsp;30 / 14&nbsp;h&nbsp;00–16&nbsp;h&nbsp;30)
+									    : j’apprends aux habitants à devenir autonomes dans l’entretien quotidien de leur bicyclette
+									    (réglages, sécurité, diagnostic).
+									  </li>
 
-<p>
-    En collaboration avec  <a href="https://www.guidemarchand.fr/"><strong>Guide Marchand</strong></a>, nous parcourons la France à la rencontre des
-    <strong>producteurs</strong> et <strong>artisans locaux</strong>.
-  </p>
+									  <li>
+									    <strong>Récits de route</strong>
+									    (samedi à 18&nbsp;h&nbsp;00)
+									    : un temps d’échange de 45 minutes durant lequel je partage mon expérience du voyage nomade
+									    et de la vie avec mes chiens.
+									  </li>
 
-  <p>
-    Que vous soyez en voyage ou sur votre lieu de vacances, cette application vous permet de
-    <strong>géolocaliser instantanément</strong> les <strong>marchés</strong> et les <strong>exposants</strong>
-    les plus proches de vous.
-  </p>
+									  <li>
+									    <strong>Apéro dînatoire poétique</strong>
+									    (dimanche à 18&nbsp;h&nbsp;00)
+									    : un moment de clôture convivial, mêlant spectacle intimiste, mis en musique, et scène ouverte,
+									    pour célébrer le vivre-ensemble.
+									  </li>
+									</ul>
 
-<p>
-  En choisissant d’acheter via <a href="https://www.guidemarchand.fr/">Guide Marchand</a>, vous encouragez une économie plus <strong>humaine</strong>,
-  plus <strong>proche</strong> et plus <strong>durable</strong>. C’est une belle manière de consommer autrement,
-  de valoriser le savoir-faire local et de participer à un modèle plus respectueux de l’environnement.
-</p>
-					<ul class="buttons">
-						<li><a href="https://www.youtube.com/playlist?list=PL5e1k2mz-ZzmVmBkPD2DQ12isvNHLKn-J" class="button primary">Suivez mes aventures avec Guide Marchand</a></li>
+						</section>
+
+
+
+				</article>
+
+			<!-- Footer -->
+				<footer id="footer">
+
+					<ul class="icons">
+						<li><a href="https://www.facebook.com/max.le.bourlingueur.cyclo.nomade/?locale=fr_FR" class="icon brands circle fa-facebook-f"><span class="label">Facebook</span></a></li>
+						<li><a href="https://www.instagram.com/max_le_bourlingueur/" class="icon brands circle fa-instagram"><span class="label">Instagram</span></a></li>
+						<li><a href="https://www.tiktok.com/@maxlebourlingueur" class="icon brands circle fa-tiktok"><span class="label">Tiktok</span></a></li>
+						<li><a href="https://www.youtube.com/channel/UCQoujIVJLFlmuWatibu2wpQ/featured" class="icon brands circle fa-youtube"><span class="label">Youtube</span></a></li>
 					</ul>
-									</section>
-<br>
-<br>
-								</div>
-
-							</div>
-										<footer>
-										<ul class="buttons">
-										  <li>
-											<a href="index.html" class="button">Retour à l'accueil</a>
-										  </li>
-										</ul>
-									  </footer>
 
 
+				<ul class="copyright">
+					<li>&copy; Max le Bourlingeur</li>
+					<li>Design: <a href="http://html5up.net">HTML5 UP</a> modification <a href="https://djon.enote.be/cv/">Djon</a></li>
+				</ul>
 
 
+				</footer>
 
+		</div>
 
-		</section>
-        </section>
-      </article>
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.dropotron.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/jquery.scrollgress.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
 
-	<footer id="footer">
+			  <script>
+			  new Splide('#image-carousel', {
+			    type      : 'loop',     // boucle infinie
+			    autoplay  : true,       // lecture automatique
+			    interval  : 4000,       // délai entre slides (en ms)
+			    speed     : 600,        // vitesse de transition
+			    pauseOnHover: true,     // pause si la souris est dessus
+			    pauseOnFocus: false,
+			    arrows    : true,       // afficher les flèches
+			    pagination: true,       // afficher les puces
+			    perPage   : 1,          // nombre de slides affichés
+			    rewind    : true,      // retour au début automatiquement
+			    drag      : true,       // glisser pour changer de slide
+			  }).mount();
+			  </script>
 
-		<ul class="icons">
-			<li><a href="https://www.facebook.com/max.le.bourlingueur.cyclo.nomade/?locale=fr_FR" class="icon brands circle fa-facebook-f"><span class="label">Facebook</span></a></li>
-			<li><a href="https://www.instagram.com/max_le_bourlingueur/" class="icon brands circle fa-instagram"><span class="label">Instagram</span></a></li>
-			<li><a href="https://www.tiktok.com/@maxlebourlingueur" class="icon brands circle fa-tiktok"><span class="label">Tiktok</span></a></li>
-			<li><a href="https://www.youtube.com/channel/UCQoujIVJLFlmuWatibu2wpQ/featured" class="icon brands circle fa-youtube"><span class="label">Youtube</span></a></li>
-		</ul>
-
-
-	<ul class="copyright">
-		<li>&copy; Max le Bourlingeur</li>
-		<li>Design: <a href="http://html5up.net">HTML5 UP</a> modification <a href="https://djon.enote.be/cv/">Djon</a></li>
-	</ul>
-
-
-</footer>
-
-
-    </div>
-
-    <!-- Scripts -->
-    <script src="assets/js/jquery.min.js"></script>
-    <script src="assets/js/jquery.dropotron.min.js"></script>
-    <script src="assets/js/jquery.scrolly.min.js"></script>
-    <script src="assets/js/jquery.scrollex.min.js"></script>
-    <script src="assets/js/browser.min.js"></script>
-    <script src="assets/js/breakpoints.min.js"></script>
-    <script src="assets/js/util.js"></script>
-    <script src="assets/js/main.js"></script>
-  </body>
+	</body>
 </html>
